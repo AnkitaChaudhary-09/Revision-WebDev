@@ -12,6 +12,7 @@
     <nav>
       <a href="#home">Home</a>
       <a href="#about">About Me</a>
+      <a href ="#educ">Education</a>
       <a href ="#project">project</a>
       <a href ="#exp">Experience</a>
       <a href ="#blog">Blog</a>
@@ -56,6 +57,40 @@
       </ul>
      </section>
      <hr>
+      <!--Education page-->
+      <section id="educ">
+      <h2>Education</h2>
+      <table  >
+        <th>
+          <tr>
+            <td>Degree</td>
+            <td>Institution</td>
+            <td>Year</td>
+            <td>Percentage</td>
+          </tr>
+          <tr>
+            <td>B.Tech (CSE)</td>
+            <td>Mody University of Science & Technology, Rajasthan</td>
+            <td>2026</td>
+            <td>80.1% (Till 6th Sem)</td>
+          </tr>
+          <tr>
+            <td>Senior Secondary</td>
+            <td>Shivalik Public School,Agra</td>
+            <td>2022</td>
+            <td>77.8%</td>
+          </tr>
+          <tr>
+            <td>Secondary</td>
+            <td>Heritage Global School, Agra</td>
+            <td>2020</td>
+            <td>70%</td>
+          </tr>
+        </th>
+      </table>
+      
+      </section>
+      <hr>
      <!--project page-->
 
      <section id="project">
@@ -144,6 +179,14 @@ Optimized React components, achieving 30% faster load times.
           <br>
           <label for="phone">Phone Number</label>
           <input type="tel" id="phone" placeholder="Enter Your Phone Number"  required>
+          <br>
+          <label for="subject">Subject</label>
+          <select name="subject" id="subject" required >
+            <option value="inquiry">General Inquiry</option>
+            <option value="feedback">Feedback</option>
+            <option value="support">Support Request</option>
+            <option value="other">Other</option>
+          </select>
           <br>
           <label for="message">Message</label>
           <br>
