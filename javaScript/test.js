@@ -39,3 +39,15 @@ const myArr=function(){
   console.log("Hello Mypanda");
 }
 
+// Stack (Primitive), heap(Non-Primitive)
+
+let nickName="cutu"
+let anotherName = nickName
+
+anotherName="bachhaa"
+
+console.log(anotherName);
+console.log(nickName);
+
+ // in stack ,we get copy but in heap, we get refernce 
+
