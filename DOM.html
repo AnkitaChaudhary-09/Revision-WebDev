@@ -7,7 +7,7 @@
     <title>DOM</title>
 </head>
 
-<body>
+<body style="color: aliceblue; background-color: black;">
     <div class="div1">
         <h1>
             Learning JS
@@ -16,6 +16,32 @@
         <div class="day">Thursday</div>
         <div class="day">Friday</div>
         <div class="day">Saturday</div>
-    </div>
+    </div >
+    <ul class="langs">
+        <li>
+            javascript
+        </li>
+    </ul>
 
-</body>>
+</body>
+<script>
+    // function addLang(langName) {
+    //     const li=document.createElement('li');
+    //     li.innerHTML=`${langName}`
+    //     document.querySelector('.langs').append(li)
+    // }
+    // addLang("java");
+    function addLang(langName){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.langs').appendChild(li)
+    }
+    addLang('java')
+    addLang('python')
+//edit
+const Secondlang=document.querySelector("li:nth-child(2)")
+const newli= document.createElement('li');
+newli.textContent="C"
+Secondlang.replaceWith(newli)
+</script>
+</html>
