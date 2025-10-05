@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API in javaScript</title>
+</head>
+<body>
+    XMLHttpRequest Object: The core of AJAX is the XMLHttpRequest object (or the more modern fetch() API). This object allows a web browser to make HTTP requests to a server in the background.
+Sending Requests: JavaScript code on the client-side uses XMLHttpRequest to send a request to a server-side script. This request can include data, which can be formatted as XML.
+Server-Side Processing: The server-side script (e.g., PHP, ASP.NET, Java) receives the request, processes the data (if any), and generates a response. If XML is used for data exchange, the server will construct an XML document containing the data to be sent back to the client.
+</body>
+<script>
+    const requestURL='https://api.github.com/users/ankitachaudhary'
+    const xmlr =new XMLHttpRequest();
+    xmlr.open('GET',requestURL)
+    xmlr.onreadystatechange=function(){
+console.log("here",xmlr.readyState);
+if (xmlr.readyState==4) {
+    const data =JSON.parse(this.responseText);
+    console.log(typeof data);
+    console.log(data.followers); 
+    
+}
+    }
+    
+    xmlr.send()
+</script>
+</html>
