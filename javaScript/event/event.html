@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event html</title>
+</head>
+<body style="background-color:gray; color:cornflowerblue">
+    <h2> Amazing Images</h2>
+    <ul>
+        <li><img src="https://www.shutterstock.com/image-photo/aerial-view-taj-mahal-along-600nw-2550893735.jpg" id="agra" alt="" width="200px"></li>
+        <li><img src="https://s7ap1.scene7.com/is/image/incredibleindia/1-jama-masjid-lucknow-uttar-pradesh-attr-hero?qlt=82&ts=1742157773303" id="luck" width="200px" alt=""></li>
+        <li><img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202508/shri-banke-bihari-temple--mathura-09114976-1x1.jpg?VersionId=lglDsCjhxglxiXEdlmftXZn7TkUCGRuk" id="banke" width="200px" alt=""></im></li>
+        <li><img src="https://www.tourmyindia.com/socialimg/barsana-tourism.jpg" id="barsana" width="200px" alt=""></li>
+        <li><a style="color: aliceblue;" href="https://google.com" id="google" >Google</a></li>
+    </ul>
+    <button id="start" onclick="startInter">Start</button>
+    <button id="stop" onclick="clearInterval(startInter)">Stop</button>
+
+    <script>
+        //false
+            //type,timestamp,defaultPrevented,target,toElement,srcElement,CurrentTarget
+            //clientX,Y and screenX,Y
+            //altkey,ctrlkey,shift,keycode
+            // alert("agra clicked again")
+        document.getElementById('banke').addEventListener('click',function(e){  
+            console.log("clicked inside the url");
+        })
+
+         document.getElementById('barsana').addEventListener('click',function(e){  
+            console.log("barsana clicked");
+        })
+
+//set interval
+    const startInter =setInterval(function(){
+    console.log("hlo",Date.now());
+    
+    },1000)
+    
+    
+
+    </script>
+</body>
+</html>
